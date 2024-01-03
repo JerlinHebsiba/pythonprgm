@@ -1,0 +1,99 @@
+
+s=16.09
+print("type of s is",type(s))
+
+
+print("enter a value")
+s=int(input())
+if(s>=60):
+    print("greater than 60")
+else:
+    print("lesser than 60")
+
+
+count=0
+for i in range(2,50):
+    if(i%2==0):
+        print(i,",")
+        count+=1
+        if(count>=10):
+            break
+
+
+x1=y1=z1=w1=50
+print("x1:",x1,"y1:",y1,"z1:",z1,"w1:",w1)
+
+
+print("enter the number:")
+num=int(input())
+if(num%2==0):
+    print("number is divisible by 2")
+elif(num%3==0):
+    print("number is divisible by 3")
+else:
+    print("number is not divisible by 2 or 3")
+
+
+def xoxo(p,n,r):
+    interest=(p*n*r)/100
+    print(interest)
+x=int(input())
+print("enter the number of years:")
+y=int(input())
+print("enter the rate:")
+z=int(input())
+xoxo(x,y,z)
+
+
+x,y,z=80,'lily',3.14
+print("interger variable:",x)
+print("string variable:",y)
+print("floating variable:",z)
+
+
+print("enter a value:")
+val=int(input())
+if (val<=40):
+    print("average")
+elif(val<40 and val<50):
+    print("good")
+else:
+    print("very good")
+
+
+
+factorial=int(input("enter a number:"))
+cal_fac(factorial)
+
+
+
+z=50
+print(z)
+del z
+print(z)
+
+
+print("enter the 1st number:")
+f=int(input())
+print("enter the 2nd number:")
+s=int(input())
+print("enter the 3rd number:")
+t=int(input())
+result=max(f,s,t)
+print("the biggest number is:",result)
+if(f>s):
+    if(f>t):
+        print("first number is biggest")
+    elif(s>t):
+        print("second number is biggest")
+    else:
+        print("third number is biggest")
+
+
+def sumofseries(n):
+    i=1
+    result=0
+while i<=n:
+    result+=i
+    i+=1
+return result
